@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  },
+  "name": "typscript-react-beginning",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
