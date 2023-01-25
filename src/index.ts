@@ -123,6 +123,21 @@ function strLength(str: string): number{
 // // backpack.add(23); //since backpack variable is a string it will  pop an error
 //                      // "Argument of type 'number' is not assignable to parameter of type 'string'
 
+Set.prototype.toString = function(){return Array.from(this).toString()}; // TO BE ABLE TO USE STRING INTERPOLATION
+const set3 = new Set<number>([1,2,3,4,5]);
+const set4 = new Set<number>([2,5,7,-10]);
+console.log (`set3: ${set3}`);          //--> set3: [object Set], to get "set3: 1,2,3,4,5" we need to create an array 
+                                        // (which has a method 'toString' )from the set and to assign 'toString' method 
+                                        // for the set.
+                                        // 
+console.log (`set4: ${set4}`);
+console.log(`intersection (set3,set4) = ${intersection(set3,set4)}`); //-->intersection (set3,set4) = 2,5
+console.log(`subtract (set3,set4) = ${subtract(set3, set4)}`); //--> subtract (set3,set4) = 1,3,4
+console.log('__'.repeat(20))
+
+
+
+
 
 
 
